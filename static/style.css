@@ -58,5 +58,11 @@ header {
 }
 
 .empty{
-    height: ;
+    height: 140px;
+}
+
+#result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
