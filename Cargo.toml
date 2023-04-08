@@ -8,5 +8,6 @@ edition = "2021"
 [dependencies]
 async-std = {version="1.12.0",  features = ["attributes"]}
 femme = "2.2.1"
+rusqlite = "0.29.0"
 serde = "1.0.159"
 tide = "0.16.0"
