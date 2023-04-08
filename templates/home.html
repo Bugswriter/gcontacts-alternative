@@ -2,17 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Bugs Contacts</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link href="{{ url_for('static', filename='style.css' )}}" rel="stylesheet"/>    
   </head>
   <body>
     <header>
-      <h1>Search Contacts</h1>
+      <div class="wrapper">
+        <input id="query" type="text" value="" placeholder="Enter Name"/>
+        <button id="btn" >Search</button>
+      </div>
     </header>
     <main>
-      <input id="query" type="text" value=""/>
-      <button id="btn" >Search</button>
+      <div class="empty"></div>
       <ul id="result"></ul>
     </main>        
   </body>
